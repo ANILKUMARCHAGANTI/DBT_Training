@@ -2,7 +2,6 @@
     config(
         materialized = 'incremental',
         incremental_strategy = 'insert_overwrite',
-        unique_id = 'host_id',
         partition_by = {
             "field" : "created_at",
             "data_type" : "timestamp",
