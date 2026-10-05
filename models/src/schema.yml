@@ -1,0 +1,44 @@
+models:
+
+  - name: src_hosts
+    description: "This table derives data from source raw hosts."
+    config:
+      pre_hook:
+        - "insert into Training_Dataset.sample_id values (10)"
+        - "{{audit_start()}}"
+      
+      post_hook: 
+        - "insert into Training_Dataset.sample_id values (11)"
+        - "{{audit_end()}}"
+    columns: 
+      - name: host_id
+        description: "This represents the host id."
+      - name: host_name
+        description: "This represents the host name."
+      - name: is_superhost
+        description: "This represents if the host is a superhost."
+      - name: created_at
+      - name: updated_at
+
+  - name: src_listings
+    description: "This table derives data from source raw listings."
+    columns: 
+      - name: listing_id
+        description: "This represents the listing id."
+      - name: listing_url
+        description: "This represents the listing url."
+      - name: listing_name
+        description: "This represents the listing name."
+      - name: created_at
+      - name: updated_at
+
+  - name: src_reviews
+    description: "This table derives data from source raw reviews."
+    columns: 
+      - name: listing_id
+        description: "This represents the listing id."
+      - name: review_date
+        description: "This represents the review date."
+      - name: reviewer_name
+        description: "This represents the reviewer name."
+   

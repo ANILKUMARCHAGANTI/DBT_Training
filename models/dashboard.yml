@@ -1,0 +1,63 @@
+exposures: 
+
+
+  - name : Dashboard_1 
+    label: Anil_Dashboard
+    type : dashboard
+    maturity : low
+    url : https://www.bing.com/search?q=dashboard%20wiki&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=dashboard%20wi&sc=10-12&sk=&cvid=571DFB3A8D96438099601FFB7FD50CC5
+    description : 'This is a dashboard.'
+    depends_on :  
+      - ref('dim_listings_w_hosts')
+    owner : 
+      name : Anil
+      email : abc@gmail.com
+
+  - name: Application_1 
+    label: Anil_Application
+    type : application
+    maturity : high
+    url : https://dashboard.wikiedu.org/
+    description : 'This is the application.'
+    depends_on :  
+      - ref('dim_listings_w_hosts')
+    owner : 
+      name : Anil
+      email : abc@gmail.com
+
+  - name : Notebook_1 
+    label: Anil_Notebook
+    type : notebook
+    maturity : low
+    url : https://www.bing.com/search?q=notebook&cvid=5ee5a5adfd7d4e68a3416438a1ac9cc0&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOdIBBzc0N2owajmoAgCwAgA&FORM=ANAB01&PC=U531
+    description : 'This is a notebook.'
+    depends_on :  
+      - ref('dim_listings_w_hosts')
+    owner : 
+      name : Anil
+      email : abc@gmail.com
+
+  - name: ML_1 
+    label: Anil_ml
+    type : ml
+    maturity : high
+    url : https://www.bing.com/search?q=ml&qs=n&form=QBRE&sp=-1&lq=0&pq=m&sc=12-1&sk=&cvid=CBE4C0A7E59A4D16B4D953A21CDEE251
+    description : 'This is the ml.'
+    depends_on :  
+      - ref('dim_listings_w_hosts')
+    owner : 
+      name : Anil
+      email : abc@gmail.com
+
+
+  - name: Analysis_1 
+    label: Anil_Analysis
+    type : analysis
+    maturity : high
+    url : https://www.bing.com/search?pglt=2083&q=analysis&cvid=2a0e7ed3589b4d09b31ab644a55a31cd&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQLhhAMgYIAhAuGEAyBggDEAAYQDIGCAQQLhhAMgYIBRAAGEAyBggGEC4YQDIGCAcQABhAMgYICBAFGEDSAQgyMTgzajBqN6gCALACAA&FORM=ANNTA1&PC=U531
+    description : 'This is the analysis.'
+    depends_on :  
+      - ref('dim_listings_w_hosts')
+    owner : 
+      name : Anil
+      email : abc@gmail.com
