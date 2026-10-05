@@ -7,7 +7,6 @@
             "data_type" : "timestamp",
             "granularity" : "day"
         },
-        tags = ['anil', 'airbnb', 'models']  
     )
 
 }}

@@ -7,7 +7,6 @@
             "data_type" : "timestamp",
             "granularity" : "year"
         },
-        tags = ['anil', 'airbnb', 'models'] 
     )
  
 }}

@@ -1,7 +1,7 @@
 {{
 
     config(
-        materialized = 'materialized_view',
+        materialized = 'view',
         enable_refresh = true,
         refresh_interval_minutes = 30,
         partition_by = {

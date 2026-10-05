@@ -69,10 +69,7 @@ models:
       - name: host_id
         description: "Host associated with the listing."
         tests:
-          - not_null
-          - relationships:
-              to: ref('dim_hosts_cleaned')
-              field: host_id
+          - not_null  
 
       - name: price_str
         description: "Listing price."

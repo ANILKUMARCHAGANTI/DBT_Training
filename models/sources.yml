@@ -32,16 +32,5 @@ sources:
             description: "This is the listing url"
 
 
-  - name: airbnb_2
-    database: racko-master-project-505113
-    schema: "{{env_var('AIRBNB_TARGET_SCHEMA')}}"
-    
-    tables: 
-      - name: new_hosts
-        identifier: AIRBNB_TESTS_HOSTS
-        columns: 
-          - name: ID
-            description: "This is column_id"
-          - name: name 
-            description: "This is column name"
+
 

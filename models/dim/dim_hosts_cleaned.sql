@@ -1,9 +1,7 @@
 {{
 
     config(
-        materialized = 'table', 
-        pre_hook = "insert into dbt_Dataset.sample_id values (0)",
-        post_hook = "insert into dbt_Dataset.sample_id values (1)"
+        materialized = 'table'
     )
 
 }}

@@ -9,7 +9,6 @@
         },
         partition_expiration_days = 3500,
         require_partition_filter = true,
-        tags = ['anil', 'airbnb', 'models'] 
     )
  
 }}
